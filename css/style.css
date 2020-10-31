@@ -1,0 +1,80 @@
+body {
+    background-color: #BE77F4;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 85px;
+    font-family: sans-serif;
+    line-height: 25px;
+}
+
+.header {
+    color: rgba(250,250,250,0.9);
+    margin: 10px 30vw;
+    text-align: center;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+section div {
+    position: relative;
+}
+
+section div.squar {
+    top: 30px;
+    left: 30px;
+}
+
+section div.secondDiv {
+    font-size: 24px;
+    bottom: 40px;
+    padding: 10px 20px;
+}
+
+section div.secondDiv p:nth-child(2) {
+    font-size: 14px;
+}
+
+section div:hover img {
+    display: none;
+}
+
+section > div > div {
+    position: absolute;
+    color: white;
+    bottom: 5px;
+    z-index: 10;
+}
+
+.squar {
+    background-color: #434A4F;
+    border-radius: 5%;
+    width: 55px;
+    height: 55px;
+    font-size: 17px;
+    line-height: 17px;
+    padding: 0;
+}
+
+button {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
